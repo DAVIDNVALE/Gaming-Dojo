@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Dojo WF2021</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="banner"></div>
+
+    <div class="header">
+        <div class="content">
+            <h1 class="title"><span class="first-color">Gaming</span><span class="second-color">Dojo</span></h1>
+            <select class="money">
+                <option value="euro">Euro €</option>
+            </select>
+            <img src="images/cart-light.png" alt="cart">
+            <p id="cart">0</p>
+            <img src="images/search-light.png" alt="search">
+        </div>
+    </div>
+
+    <div class="container">
+
+        <h2 class="highlights">Highlights</h2>
+
+        <div class="top-row">
+            <div class="left-arrow">
+            <button onclick="left()"><img src="images/chevron-left.png" alt="left"></button> 
+            </div>
+            <div class="middle-image">
+                <img src="images/stonepunk.png" alt="stone" id="middle-picture">
+            </div>
+            <div class="right-arrow">
+                <button onclick="right()"> <img src="images/chevron-left.png" alt="right"></button> 
+            </div>
+        </div>
+            
+        <div class="line-row">
+            <button class="button-one"></button>
+            <button class="button-two"></button>
+            <button class="button-three"></button>
+            <button class="button-four"></button>
+        </div>
+
+        <div class="pictures">
+            <div class="left-pictures">
+                <img src="images/cafe-neko.png" alt="neko">
+            </div>
+            <div class="middle-pictures">
+                <img src="images/pixel-ninjas-2.png" alt="ninjas" id="ninjas">
+            </div>
+            <div class="right-pictures">
+                <img src="images/stonepunk.png" alt="stone">
+            </div>
+        </div>
+
+         <div class="bottom-row">
+        
+        <div class="left-box">
+            <div class="first-line-left">
+                <h2>Cafe Neko: Gold Edition</h2>
+            </div>
+            <div class="windows-apple-left-box">
+                <img src="images/windows.png" alt="windows">
+                <img src="images/apple.png" alt="apple">
+            </div>
+            <div class="price-cross-left">
+                <h3>€14.98</h3>
+            </div>
+            <div class="price-buy-left-box">
+                <button class="percent-left-box">-20%</button>
+                <h3>€10.49</h3>
+                <button onclick="add1()" class="buy-left-box">Buy</button>
+            </div>
+        </div>
+        
+        <div class="middle-box">
+                <div class="first-line-middle">
+                    <h2>Pixel Ninjas 2</h2>
+                </div>
+                <div class="windows-apple-middle-box">
+                    <img src="images/windows.png" alt="windows">
+                    <img src="images/apple.png" alt="apple">
+                </div>
+                <div class="price-cross-middle">
+                    <h3>€8.19</h3>
+                </div>
+                <div class="price-buy-middle-box">
+                    <button class="percent-middle-box">-10%</button>
+                    <h3>€7.39</h3>
+                    <button onclick="add1()" class="buy-middle-box">Buy</button>
+                </div>
+        </div>
+
+        <div class="right-box">
+                <div class="first-line-right">
+                    <h2 >Stonepunk 10000 BCE</h2>
+                </div>
+                <div class="windows-apple-right-box">
+                    <img src="images/windows.png" alt="windows">
+                    <img src="images/apple.png" alt="apple">
+                    <img src="images/linux.png" onclick="alert('This game is supported on Linux')" alt="linux">
+                </div>
+                <div class="price-buy-right-box">
+                    <button class="percent-right-box">NEW</button>
+                    <h3>€19.99</h3>
+                    <button onclick="add1()" class="buy-right-box">Buy</button>
+                </div>
+        </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
